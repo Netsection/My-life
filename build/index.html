@@ -36,8 +36,8 @@
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
 
-        <section id="briefintro" class="p-6 my-12">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900">
+        <section id="briefintro" class="p-6 my-12 scroll-mt-16">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Brief Intro
             </h2>
             <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
@@ -48,8 +48,8 @@
             </ul>
             <hr class="mx-auto bg-black dark:bg-white w-1/2">
         </section>
-        <section id="briefintro" class="p-6 my-12">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900">
+        <section id="briefintro" class="p-6 my-12 scroll-mt-16">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Who Is Allan?
             </h2>
             <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
@@ -70,7 +70,22 @@
                 <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">I value sports a lot with table tennis being my favorite sport.I also play soccer and some video games during my leisure if I'm not reading.</h3>   
                 </li>
             </ul>
+            <hr class="mx-auto bg-black dark:bg-white w-1/2">
         </section>
+        <section id="contact" class="p-6 my-12 scroll-mt-16">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Contact Me
+            </h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required  minlength="3" maxlength="60" placeholder="Your Subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-800 dark:border-none" />
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-800 dark:border-none"></textarea>
+                <button class="bg-blue-700 hover:bg-blue-600 active:bg-blue-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">Submit</button>
+            </form>
+
+        </section>
+       
     </main>
     
 </body>
