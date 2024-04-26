@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan's Story</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="min-h-screen place-content-center radial-blue">
+    <header class="bg-blue-700 text-white sticky top-0 z-10">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-medium">Allan's Story</h1>
+            <div>
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+                   <!--  &#9776; -->
+                   <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute  after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500 "></div>
+                </button>
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+                    <a href="#brief intro" class="hover:opacity-90">Brief Intro</a>
+                    <a href="#about" class="hover:opacity-90">Who is Allan?</a>
+                    <a href="#contact" class="hover:opacity-90">How to reach Me</a>
+                </nav>
+            </div>
+        </section>
+        <section id="mobile-menu" class="absolute top-68 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+           <!--  <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hero" class="w-full text-center py-6 hover:opacity-90 ">Home</a>
+                <a href="#brief intro" class="w-full text-center py-6 hover:opacity-90 ">Brief Intro</a>
+                <a href="#about" class="w-full text-center py-6 hover:opacity-90 ">Who is Allan?</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-90 ">How to reach Me</a>
+                <a href="#footer" class="w-full text-center py-6 hover:opacity-90 ">Footer</a>
+            </nav>
+        </section>
+    </header>
+    <main class="max-w-4xl mx-auto">
+        <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-12">
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-5/6 sm:w-7/8 flex flex-col items-center border border-solid border-slate-900 dark:border-blue-200 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <figure class="profile-pic-figure">
+                        <img src="img/download.jpg" alt="Hello" class="w-5/6 mb-6">
+                        <h2 class="text-3xl text-center text-slate-900 dark:text-yellow-400">Oh Hi there! Your about to read Allan's story</h2> 
+                    </figure>
+                <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">   
+                </li>
+            </ul>
+            <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        </section>
+       
+        <section class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-12">
+            <article class="sm:w-1/2">
+                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900">
+                    I am a young lad, 17 years of age. I am currently in the DirectEd program...
+                </h2>
+                <p class="max-w-md text-2xl mt-4 text-center sm:text-right text-slate-800 dark:text-slate-600">DirectEd has no- doubtebly  imparted committment, hardwork and resilience in me.</p>
+                <p class="max-w-md text-2xl mt-4 text-center sm:text-right text-slate-800 dark:text-slate-600">Many thanks to the DirectEd family</p>
+               
+            </article>
+            <img class="w-2/3" src="img/Screenshot_2024-04-25-13-25-35-95_99c04817c0de5652397fc8b56c3b3817.jpg" alt="My profile pic">
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2">
+
+        <section id="brief intro" class="p-6 my-12 scroll-mt-16">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Brief Intro
+            </h2>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-4/5 sm:w-7/8 flex flex-col items-center border border-solid border-slate-900 dark:border-blue-200 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                <img src="img/download.webp" alt="fun" class="w-4/5 mb-6">
+                <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">I am a friend and confidant who is fun to be with and guaranteed to crack your ribs with some jokes.</h3>   
+                </li>
+            </ul>
+            <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        </section>
+        <section id="about" class="p-6 my-12 scroll-mt-16">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Who Is Allan?
+            </h2>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-4/5 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-blue-200 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                <img src="img/download (1).jpg" alt="education" class="w-3/4 mb-6">
+                <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">My educational background is nothing short of the best. Having attended a renown primary school-Juja St. Peters, I had no choice but to excel in my national exams,which I did, and secure a spot at Kagumo High School(another great school).I am currently studying programming with DirectEd development , a program that has really impacted lives of many high school graduates in Kenya and Ethiopia. Here is an example of some of the things I was able to accomplish with DirectEd.</h3>   
+                </li>
+            </ul>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-4/5 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-blue-200 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                <img src="img/download (2).jpg" alt="pets" class="w-3/4 mb-6">
+                <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">Pets are an important part of my life as I have four cats. As you can tell cats are my favorite pets due to their loving and friendly nature.</h3>   
+                </li>
+            </ul>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-4/5 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-blue-200 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                <img src="img/images.jpg" alt="sport" class="w-3/4 mb-6">
+                <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">I value sports a lot with table tennis being my favorite sport.I also play soccer and some video games during my leisure if I'm not reading.</h3>   
+                </li>
+            </ul>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-4/5 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-blue-200 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                <img src="img/download.png" alt="sport" class="w-3/4 mb-6">
+                <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">Why DirectEd? What do you do when presented with a life-changing opportunity? Personally I make haste to grab it . So when I was told about DirectEd and its benefits, I chose to enrol and despite the many challenges that came with it, I am glad I made the right choice as they have greatly impacted my life; of course for the better.</h3>   
+                </li>
+            </ul>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-4/5 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-blue-200 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                <img src="img/download.png" alt="sport" class="w-3/4 mb-6">
+                <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">Through DirectEd I have been able to make a  variety of projects which include; The Little Taco Website & Acme Rockets Website.</h3>   
+                </li>
+            </ul>
+            <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        </section>
+        <section id="contact" class="p-6 my-12 scroll-mt-16">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                How to Reach Me
+            </h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required  minlength="3" maxlength="60" placeholder="Your Subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-800 dark:border-none" />
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-800 dark:border-none"></textarea>
+                <button class="bg-blue-700 hover:bg-blue-600 active:bg-blue-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">Submit</button>
+            </form>
+
+        </section>
+       
+    </main>
+    <footer id="footer" class="bg-blue-800 bottom-0 text-white font-bold text-xl sm:text-3xl">
+           <div class="p-10 text-gray">
+            <div class="max-w-4xl mx-auto sm:flex-cols-2 md:flex-cols-2 ">
+                <div class="mb-5">
+                    <section class="text-white">
+                    <h4>Allan,</h4>
+                    A123 Lost Street, <br>
+                    Chandigarh, PB 243233, <br>
+                    Kenya. <br>
+                    <strong>Phone:</strong>+0714 125102 <br>
+                    <strong>Email:</strong>gachohiallan@gmail.com <br>
+                </section>
+                </div>
+            </div>
+           </div>        
+        <section class="text-center">
+           <div class="mb-5">
+            <h4 class="sm:text-center md:text-center">Useful links</h4>
+            <hr class="mx-auto bg-black dark:bg-white w-1/2">
+            <ul class="text-white  md:text-center">
+                <li class="pb-4"><a href="#" class="hover:text-gray-200">Home</a></li>
+                <li class="pb-4"><a href="#brief intro" class="hover:text-gray-200">Brief Intro</a></li>
+                <li class="pb-4"><a href="#about" class="hover:text-gray-200">Who is Allan?</a></li>
+                <li class="pb-4"><a href="#contact" class="hover:text-gray-200">How to reach me</a></li>
+                <li class="pb-4"><a href="https://www.instagram.com/accounts/onetap/?next=%2F" class="hover:text-gray-200"> My Instagram</a></li>
+                <li class="pb-4"><a href="https://github.com/account" class="hover:text-gray-200">My Github Page</a></li>
+                
+            </ul>
+           </div>
+        </section>
+    </footer>
+    
+
+</body>
+</html>
