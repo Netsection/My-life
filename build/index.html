@@ -1,29 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" sm:scroll-smooth>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story of My Life</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body class="min-h-screen place-content-center radial-blue">
     <header class="bg-blue-700 text-white sticky top-0 z-10">
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-3xl font-medium">Allan's Story</h1>
             <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
-                    &#9776;
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+                   <!--  &#9776; -->
+                   <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute  after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500 "></div>
                 </button>
-                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <a href="#brief intro" class="hover:opacity-90">Brief Intro</a>
-                    <a href="#about" class="hover:opacity-90">Who is Allan</a>
-                    <a href="#contact" class="hover:opacity-90">Contact Me</a>
+                    <a href="#about" class="hover:opacity-90">Who is Allan?</a>
+                    <a href="#contact" class="hover:opacity-90">How to reach Me</a>
                 </nav>
             </div>
         </section>
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+            <button class="text-8xl self-end px-6">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hero" class="w-full text-center py-6 hover:opacity-90 ">Home</a>
+                <a href="#brief intro" class="w-full text-center py-6 hover:opacity-90 ">Brief Intro</a>
+                <a href="#about" class="w-full text-center py-6 hover:opacity-90 ">Who is Allan?</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-90 ">How to reach Me</a>
+            </nav>
+        </section>
     </header>
     <main class="max-w-4xl mx-auto">
-        <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-12">
+        <section id="hero">
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-5/6 sm:w-7/8 flex flex-col items-center border border-solid border-slate-900 dark:border-blue-200 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <figure class="profile-pic-figure">
+                        <img src="img/download.jpg" alt="Hello" class="w-5/6 mb-6">
+                        <h2 class="text-3xl text-center text-slate-900 dark:text-yellow-400">Oh Hi there! Your about to read Allan's story</h2> 
+                    </figure>
+                <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">   
+                </li>
+            </ul>
+            <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        </section>
+       
+        <section class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-12">
             <article class="sm:w-1/2">
                 <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900">
                     I am a young lad, 17 years of age. I am currently in the DirectEd program...
@@ -70,6 +96,12 @@
                 <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">I value sports a lot with table tennis being my favorite sport.I also play soccer and some video games during my leisure if I'm not reading.</h3>   
                 </li>
             </ul>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-4/5 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-blue-200 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                <img src="img/download.png" alt="sport" class="w-3/4 mb-6">
+                <h3 class="text-3xl text-center text-slate-900 dark:text-yellow-400">Why DirectEd? What do you do when presented with a life-changing opportunity? Personally I make haste to grab it . So when I was told about DirectEd and its benefits, I chose to enrol and despite the many challenges that came with it, I am glad I made the right choice as they have greatly impacted my life; of course for the better.</h3>   
+                </li>
+            </ul>
             <hr class="mx-auto bg-black dark:bg-white w-1/2">
         </section>
         <section id="contact" class="p-6 my-12 scroll-mt-16">
@@ -87,6 +119,17 @@
         </section>
        
     </main>
+    <footer id="footer" class="bg-blue-800 sticky bottom-0 text-white font-bold text-xl sm:text-3xl">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col">
+            <address>
+                
+                    <h2>My Story</h2>
+                    Email: <a href="mailto:inquiries@gachohiallan.com">Querries@gachohiallan.com</a><br>
+                    Phone: <a href="tel;+07123456789">(+254)123 456 789</a> 
+                
+            </address>
+        </section>
+    </footer>
     
 </body>
 </html>
