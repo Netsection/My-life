@@ -16,6 +16,9 @@ module.exports = {
       },
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
       }
     },
   },
