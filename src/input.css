@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilties {
+@layer utilities {
     .section-min-height {
-        min-height: calc(100vh -68px)
+        min-height: calc(100vh - 68px)
     }
 
     .toggle-btn {
